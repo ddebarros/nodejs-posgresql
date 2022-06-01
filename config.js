@@ -7,7 +7,9 @@ const config = {
     user: env.DB_USER || 'cklijfef',
     password: env.DB_PASSWORD || 'V1qidES5k3DSJICDRgXtyT8qeu2SPCZp',
     database: env.DB_NAME || 'cklijfef',
-    ssl: env.DB_SSL_MODE
+    ssl: {
+      rejectUnauthorized: true
+    }
   },
   listPerPage: env.LIST_PER_PAGE || 10,
 };
